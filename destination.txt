@@ -1,0 +1,43 @@
+			GESTIONNAIRE DE FICHIER : MANUEL D'UTILISATION
+
+
+l'application à déployer est un systéme de gestion de fichier portable dont exercutable dans plusieur systeme d'exploitation. le systéme de fichier Un gestionnaire de fichiers, aussi appelé explorateur de fichiers, est un logiciel qui permet aux utilisateurs d'interagir avec les fichiers et les répertoires (dossiers) sur un système d'exploitation. Son rôle principal est de fournir une interface graphique conviviale pour la gestion des fichiers, facilitant ainsi la navigation, la copie, le déplacement, la suppression et d'autres opérations sur les données stockées sur un ordinateur. Mais notre gestionnaire de fichier prend particuliérement deux paramétres en entré:le chemin abolu d'un premier répertoire qui est le répertoire Racine de notre gestionnaire de fichier et un second répertoire qui est le répertoire courant de l'utilisateur. nottons que toutefois l'utilisateur pour pouvoir exercuter les commandes du Gestionnaire doit se positionner sur le répertoire ou se trouve la classe principale de l'application par défaut sur le repertoire miniprojet-grp-73-84 car le systéme reconnait se repertoire comme étant le repertoire courant légitime d'exercution des commandes du gestionnaire. pour etre plus explicie cela voudrait dire que au niveau du renseignement du répertoire courant l"utilisateur peut renseigner n'importe quel répertoire de sa machine l'application l'affichera le contenu de tous le répertoire courant en question mais lorsque celui-ci voudra exercuter des fonctions du gestionnaire de fichier sur des fichiers et dossies particulier du répertoire courant celui-ci devra crerr une copie des fichiers et repertoire de son répertoire courant dans le dosssier source du gestionnaire de fichier dans notre cas  miniprojet-grp-73-84.
+notre gestionnaire de fichierpropose un aide au commande accessible depuis la commande ? du terminal et cette aide montre la syntaxe d'utilisation des commandes et l'ensemble des commandes disponibles dans le gestionnaire de fichier.
+
+	AIDE AUX COMMANDES
+
+Pour les commandes udu gestionnaire de fichier nous avons implémentés 10 fonctions principales qui sont les suivantes :
+	Copy : qui crée un doublon d'un fichier dans le répertoire courant et le nomme le doublon en question destination. La commande prend en paramètre le NER du fichier en question
+ Exemple : 4 copy 
+	Cut : qui permet de couper un fichier et le garder en mémoire pour une éventuelle commande past qui permet de coller le fichier en question. La commande prend en paramètre le NER du fichier en question.
+Exemple : 4 cut
+	Visu : qui permet de visualiser le contenu d'un fichier texte et d'afficher la taille du fichier si le fichier n'est pas un fichier texte. La commande prend en paramètre le NER du fichier en question
+ Exemple : 4 visu
+	 Change Directory(.) : qui permet de descendre d'un cran dans le système de fichier à partir du répertoire courant. La commande prend en paramètre le NER du répertoire en question.
+Exemple : 4 .
+	GetParentDirectory(..) : qui permet de monter d'un cran dans le système de fichier à partir du répertoire courant. La commande ne prend pas de paramètre. 
+ Exemple :  .. 
+	Annotation (+) : qui permet d'annoter n'importe quel fichier depuis le répertoire courant. Elle n'est pas applicable sur des dossiers et Cette commande prend en paramètre un NER et le texte correspondant à l'annotation. Il est impératif que le message se trouve entre des cotes(" "). 
+Exemple : 4 + "ceci est une annotation"
+	Supprimer Annotation (-) : qui permet de supprimer une annotation sur un fichier spécifié grâce à son NER. 
+Exemple : 4 - 
+	mkdir : qui permet de créer un nouveau répertoire dans le répertoire courant elle prend en paramètre le nom du répertoire en question. 
+Exemple : mkdir nouveau Dossier
+	Past : qui permet de coller un fichier dans le répertoire courant. Notons que pour que cette fonction puisse s'exécuter il faut avoir exécuter la commande cut au préalable. Car la commande Past colle le fichier initialement couper grâce à Cut et le colle avec le nom du fichier en question suivit de "copy". Notons que cette commande ne prend pas de NER en paramètre 
+ Exemple : past
+	Find : cette autre fonction permet de rechercher un fichier prit en paramètre dans tous les sous dossiers du répertoire courant et retourne l'arborescence en question où se trouve le fichier si le fichier existe. Notons qu'il faut spécifier le nom du fichier et son extension pour que la rechercher se fasse de maniére plus optimale.
+ Exemple : find App.java
+Notons que les commandes sont toujours sépares de leur NER par des espaces et les commandes sont écrits en minuscule.
+
+		 QUELQUES INTEROGATIONS
+
+L’utilisateur pour savoir quelle commande taper pour un élément du répertoire désigné peut consulter l'aide en tapant la commande (?).
+
+À chaque annotation d'un fichier, le fichier Note.txt qui contient l'ensemble des annotations du système de fichier est mis à jour. Le fichier Note.txt a été créer de telle sorte que la mise à jour se fasse en rajoutant les nouvelles annotations à la fin du fichier et les suppressions se fasse aussi à la fin du fichier.
+
+Les bibliothèques Java qui permettront de prendre en charge la visualisation d’une image png si l’utilisateur veut l’afficher n'ont pas été pris en compte dans cette première version pour le moment c'est juste la taille de l'image en question que l'utilisateur pourra voir. Cette fonction sera disponible sur la version suivante.
+Il serait utile d'ajouter les commandes de Tri qui permettent de trier les fichiers par différents critères (nom, taille, date de modification, etc.). Avec une fonction de Gestion des permissions qui va permettre la gestion des autorisations et des permissions d'accès aux fichiers. Aussi une fonction déplacer et supprimer qui permettent respectivement de déplacer un fichier/répertoire vers un autre répertoire et pour supprimer un fichier et un dossier et tout son contenu de manière définitive.
+
+L’évolutions que nous pouvons envisager est d'étendre le gestionnaire de fichier en dehors du répertoire source du programme car pour le moment toutes les fonctions sont exécutables uniquement sur tous les fichier et dossier contenu dans le répertoire source du programme dans notre cas le dossier miniprojet-grp-73-84. il serait plus intéressant d'étendre le gestionnaire de fichier au-delà de ce dossier .
+
+	

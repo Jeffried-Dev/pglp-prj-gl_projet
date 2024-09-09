@@ -1,0 +1,26 @@
+ l’interface RS 232 à pour role de 
+
+commande ? permet de 
+
+Switch>enable commande permettant de  
+
+Switch#configure terminal
+
+permet un passage au mode de configuration globale (le pourquoi)
+
+hostname Comm1 permet de et dire le pourquoi 
+
+Comm1(config)#interface vlan 99 permet de et c'est quoi un vlan 99
+
+
+permette de 
+Comm1(config-if)#ip address 172.17.99.11 255.255.255.0
+Comm1(config-if)#no shutdown
+
+role et importance de enable 
+
+java.mo-path
+pas de chaine de caracterer en dur
+
+installer maven wrapper: mvn wrapper:¨wrapper
+.

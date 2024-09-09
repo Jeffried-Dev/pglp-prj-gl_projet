@@ -1,0 +1,32 @@
+
+
+
+
+	AIDE AUX COMMANDES
+
+Pour les commandes du gestionnaire de fichier nous avons implémentés 10 fonctions principales qui sont les suivantes :
+	Copy : qui crée un doublon d'un fichier dans le répertoire courant et le nomme le doublon en question destination. La commande prend en paramètre le NER du fichier en question
+ Exemple : 4 copy 
+	Cut : qui permet de couper un fichier et le garder en mémoire pour une éventuelle commande past qui permet de coller le fichier en question. La commande prend en paramètre le NER du fichier en question.
+Exemple : 4 cut
+	Visu : qui permet de visualiser le contenu d'un fichier texte et d'afficher la taille du fichier si le fichier n'est pas un fichier texte. La commande prend en paramètre le NER du fichier en question
+ Exemple : 4 visu
+	 Change Directory(.) : qui permet de descendre d'un cran dans le système de fichier à partir du répertoire courant. La commande prend en paramètre le NER du répertoire en question.
+Exemple : 4 .
+	GetParentDirectory(..) : qui permet de monter d'un cran dans le système de fichier à partir du répertoire courant. La commande ne prend pas de paramètre. 
+ Exemple :  .. 
+	Annotation (+) : qui permet d'annoter n'importe quel fichier depuis le répertoire courant. Elle n'est pas applicable sur des dossiers et Cette commande prend en paramètre un NER et le texte correspondant à l'annotation. Il est impératif que le message se trouve entre des cotes(" "). 
+Exemple : 4 + "ceci est une annotation"
+	Supprimer Annotation (-) : qui permet de supprimer une annotation sur un fichier spécifié grâce à son NER. 
+Exemple : 4 - 
+	mkdir : qui permet de créer un nouveau répertoire dans le répertoire courant elle prend en paramètre le nom du répertoire en question. 
+Exemple : mkdir nouveau Dossier
+	Past : qui permet de coller un fichier dans le répertoire courant. Notons que pour que cette fonction puisse s'exécuter il faut avoir exécuter la commande cut au préalable. Car la commande Past colle le fichier initialement couper grâce à Cut et le colle avec le nom du fichier en question suivit de "copy". Notons que cette commande ne prend pas de NER en paramètre 
+ Exemple : past
+	Find : cette autre fonction permet de rechercher un fichier prit en paramètre dans tous les sous dossiers du répertoire courant et retourne l'arborescence en question où se trouve le fichier si le fichier existe. Notons qu'il faut spécifier le nom du fichier et son extension pour que la rechercher se fasse de maniére plus optimale.
+ Exemple : find App.java
+Notons que les commandes sont toujours sépares de leur NER par des espaces et les commandes sont écrits en minuscule.
+	
+
+
+
